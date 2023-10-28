@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+
+    <link rel="stylesheet" href="estilos/dados.css"> 
+    <link rel="icon" href="imagens/illustration-of-pixel-cloud-icon.png" />
+    
+</head>
+<body>
+
+    <header>
+        <a href=home.html><h1 id="link_home">Estação Meteorológica</h1></a>
+    </header>
+
+    <div id="imp" class="esconde">
+        <h2>Importar Dados</h2>
+        <!-- O Firefox não limpa os campos (FILE SELECTOR) e nem volta ao índice 0 ao recriar 
+            as opções da Lista de Seleção (deixa pré selecionado uma opção). Também não limpa os campos
+            quando ocorre REFRESH. Por isso, é necessário forçar o reset ao carregar a página -->
+            <form id="form_importar">
+                <h4>Opção 1 - Escolher o Arquivo:</h4>
+                <div id="input_div">
+                    <input type="file" id="input_sel_arq" title=" "/>
+                </div>
+                
+        </form>
+    </div>
+    
+    <div id="res_imp" class="esconde">
+        <h2>Resultado da Importação do Arquivo:</h2>
+        
+        <p>Tabela de Dados:</p>
+        <table id="tab_geral"></table>
+    </div>	
+    <script src="scripts/dados.js"></script>
+
+</body>
+</html>
